@@ -1,11 +1,4 @@
-package com.github.edisonli.properties;
-
-import cn.hutool.core.annotation.AnnotationUtil;
-import org.apache.maven.plugins.annotations.Mojo;
-import org.apache.maven.plugins.annotations.Parameter;
-import org.codehaus.plexus.component.annotations.Configuration;
-
-import java.util.List;
+package com.github.edisonlil.properties;
 
 /**
  * description

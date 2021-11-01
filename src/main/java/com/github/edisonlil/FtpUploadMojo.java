@@ -1,12 +1,8 @@
-package com.github.edisonli;
+package com.github.edisonlil;
 
-import cn.hutool.core.io.FileUtil;
-import cn.hutool.core.util.RuntimeUtil;
-import cn.hutool.extra.ftp.Ftp;
-import com.github.edisonli.properties.PluginProperties;
-import com.github.edisonli.util.FtpClient;
+import com.github.edisonlil.properties.PluginProperties;
+import com.github.edisonlil.util.FtpClient;
 import org.apache.maven.plugin.AbstractMojo;
-import org.apache.maven.plugin.MavenPluginManager;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugin.logging.Log;

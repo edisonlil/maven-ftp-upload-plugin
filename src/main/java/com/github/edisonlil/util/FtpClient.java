@@ -1,4 +1,4 @@
-package com.github.edisonli.util;
+package com.github.edisonlil.util;
 
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.extra.ftp.Ftp;
