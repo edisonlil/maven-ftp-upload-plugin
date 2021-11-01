@@ -1,6 +1,6 @@
 # maven-ftp-upload-plugin
 
-### 使用方法
+### example
 
 ```xml
 <build>
