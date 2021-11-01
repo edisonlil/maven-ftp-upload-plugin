@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="911ea6e2-5c65-4fc7-a3ab-f0625d61ce9a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="false" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="20J6DOaemDyoFKazUIbabYSNgKQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\ehr\maven-generate-docs-plugin\src\main\java\com\github\edisonli" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="FtpUploadMojo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.edisonli.FtpUploadMojo" />
+      <module name="maven-ftp-upload-plugin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.edisonli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FtpUploadMojo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="911ea6e2-5c65-4fc7-a3ab-f0625d61ce9a" name="Default Changelist" comment="" />
+      <created>1635750222287</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635750222287</updated>
+      <workItem from="1635750224644" duration="301000" />
+      <workItem from="1635750593531" duration="205000" />
+      <workItem from="1635750848956" duration="8488000" />
+      <workItem from="1635759439908" duration="59000" />
+      <workItem from="1635759503088" duration="420000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="446" y="168" key="#Project_Structure" timestamp="1635750271986">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="446" y="168" key="#Project_Structure/0.0.1707.1019@0.0.1707.1019" timestamp="1635750271986" />
+    <state x="659" y="219" key="#com.intellij.ide.util.MemberChooser" timestamp="1635759769568">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="659" y="219" key="#com.intellij.ide.util.MemberChooser/0.0.1707.1019@0.0.1707.1019" timestamp="1635759769568" />
+    <state width="1649" height="259" key="GridCell.Tab.0.bottom" timestamp="1635759511173">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="1649" height="259" key="GridCell.Tab.0.bottom/0.0.1707.1019@0.0.1707.1019" timestamp="1635759511173" />
+    <state width="1649" height="259" key="GridCell.Tab.0.center" timestamp="1635759511173">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="1649" height="259" key="GridCell.Tab.0.center/0.0.1707.1019@0.0.1707.1019" timestamp="1635759511173" />
+    <state width="1649" height="259" key="GridCell.Tab.0.left" timestamp="1635759511173">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="1649" height="259" key="GridCell.Tab.0.left/0.0.1707.1019@0.0.1707.1019" timestamp="1635759511173" />
+    <state width="1649" height="259" key="GridCell.Tab.0.right" timestamp="1635759511173">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="1649" height="259" key="GridCell.Tab.0.right/0.0.1707.1019@0.0.1707.1019" timestamp="1635759511173" />
+    <state x="355" y="152" key="SettingsEditor" timestamp="1635759486302">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="355" y="152" key="SettingsEditor/0.0.1707.1019@0.0.1707.1019" timestamp="1635759486302" />
+    <state x="578" y="334" key="com.intellij.ide.util.TipDialog" timestamp="1635750600522">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="578" y="334" key="com.intellij.ide.util.TipDialog/0.0.1707.1019@0.0.1707.1019" timestamp="1635750600522" />
+    <state width="392" height="356" key="documentation.popup.size" timestamp="1635754209325">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="392" height="356" key="documentation.popup.size/0.0.1707.1019@0.0.1707.1019" timestamp="1635754209325" />
+    <state x="516" y="220" width="672" height="678" key="search.everywhere.popup" timestamp="1635759805167">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="516" y="220" width="672" height="678" key="search.everywhere.popup/0.0.1707.1019@0.0.1707.1019" timestamp="1635759805167" />
+  </component>
+</project>
