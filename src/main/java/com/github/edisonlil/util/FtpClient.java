@@ -1,9 +1,9 @@
 package com.github.edisonlil.util;
 
-import cn.hutool.core.io.FileUtil;
+import org.apache.maven.plugin.logging.Log;
 import cn.hutool.extra.ftp.Ftp;
-
 import java.io.Closeable;
+import java.io.File;
 import java.io.IOException;
 
 /**
@@ -16,44 +16,51 @@ public class FtpClient implements Closeable {
 
     private Ftp ftp;
 
-    private static FtpClient client;
-
-    private FtpClient(){ }
+    Log log;
 
 
-    public static FtpClient getClient(String host,Integer port,String username,String password,String directory) {
-
-        if (client == null){
-            synchronized (FtpClient.class){
-                if(client == null){
-                    client = new FtpClient();
-                    client.ftp = new Ftp(host,port,username,password);
-                    client.ftp.cd(directory);
-                }
-            }
-        }
-        return client;
+    public FtpClient(String host,Integer port,String username,String password,String directory,Log log){
+        this.ftp = new Ftp(host,port,username,password);
+        this.ftp.cd(directory);
+        this.log = log;
     }
 
-    public boolean upload(String destPath,String file){
-        //上传本地文件
-       return ftp.upload(destPath, FileUtil.file(file));
+
+
+    public boolean upload(String filePath){
+
+        File root = new File(filePath);
+        root.setReadable(true);//设置可读权限
+        root.setWritable(true);//设置可写权限
+        if(root.isDirectory()){
+            File[] childFile = root.listFiles();
+            for (File file : childFile) {
+
+                if(file.isDirectory()){
+                    upload(file.getPath());
+                }
+                log.debug("upload path"+root.getPath()+"upload file name"+file.getName());
+                ftp.upload(root.getPath(), file);
+
+            }
+        }else {
+           log.debug("upload path"+root.getPath()+"upload file name"+root.getName());
+           return ftp.upload(root.getPath(), root);
+        }
+
+        return true;
     }
 
     @Override
     public void close(){
         //关闭连接
         try {
-            if(ftp != null)
+            if(ftp != null) {
                 ftp.close();
+                ftp = null;
+            }
         } catch (IOException e) {
-           if(ftp != null){
-               try {
-                   ftp.close();
-               } catch (IOException ex) {
-                   ex.printStackTrace();
-               }
-           }
+           log.error(e);
         }
     }
 }

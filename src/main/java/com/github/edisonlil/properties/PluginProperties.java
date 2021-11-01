@@ -32,18 +32,13 @@ public class PluginProperties {
     /**
      * 远程初始目录
      */
-    String ftpRemoteRootDir;
-
-    /**
-     * 远程目录
-     */
     String ftpRemoteDir;
 
 
     /**
-     * 文件目录
+     * 本地文件初始目录
      */
-    String targetPath;
+    String rootPath;
 
 
     /**
@@ -84,28 +79,22 @@ public class PluginProperties {
         this.ftpPassword = ftpPassword;
     }
 
-    public String getFtpRemoteRootDir() {
-        return ftpRemoteDir == null ? "/" : ftpRemoteDir;
-    }
 
-    public void setFtpRemoteRootDir(String ftpRemoteRootDir) {
-        this.ftpRemoteRootDir = ftpRemoteRootDir;
-    }
 
     public String getFtpRemoteDir() {
-        return ftpRemoteDir;
+      return ftpRemoteDir == null ? "/" : ftpRemoteDir;
     }
 
     public void setFtpRemoteDir(String ftpRemoteDir) {
         this.ftpRemoteDir = ftpRemoteDir;
     }
 
-    public String getTargetPath() {
-        return targetPath;
+    public String getRootPath() {
+        return rootPath;
     }
 
-    public void setTargetPath(String targetPath) {
-        this.targetPath = targetPath;
+    public void setRootPath(String rootPath) {
+        this.rootPath = rootPath;
     }
 
     public String getTargetFile() {
@@ -123,9 +112,8 @@ public class PluginProperties {
                 ", ftpPort=" + ftpPort +
                 ", ftpUsername='" + ftpUsername + '\'' +
                 ", ftpPassword='" + ftpPassword + '\'' +
-                ", ftpRemoteRootDir='" + ftpRemoteRootDir + '\'' +
                 ", ftpRemoteDir='" + ftpRemoteDir + '\'' +
-                ", targetPath='" + targetPath + '\'' +
+                ", rootPath='" + rootPath + '\'' +
                 ", targetFile='" + targetFile + '\'' +
                 '}';
     }

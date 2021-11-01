@@ -40,21 +40,25 @@ public class FtpUploadMojo extends AbstractMojo {
         //基础项目目录
         File baseDir = project.getBasedir();
 
-        FtpClient ftpClient = FtpClient.getClient(properties.getFtpHost(),properties.getFtpPort(),
-                properties.getFtpUsername(),properties.getFtpPassword(),properties.getFtpRemoteRootDir());
+        FtpClient ftpClient = new FtpClient(properties.getFtpHost(),properties.getFtpPort(),
+                properties.getFtpUsername(),properties.getFtpPassword(),properties.getFtpRemoteDir(),log);
 
-        if(properties.getTargetPath() == null){
-            properties.setTargetPath(baseDir.getPath());
+        if(properties.getRootPath() == null){
+            properties.setRootPath(baseDir.getPath());
         }
 
-
-        boolean ok = ftpClient.upload(properties.getFtpRemoteDir(),properties.getTargetPath()+"/"+properties.getTargetFile());
-
-        ftpClient.close();
-
-        if (!ok){
-            throw new  MojoFailureException("文件上传失败");
+        log.info("Start upload file...");
+        try {
+            boolean ok = ftpClient.upload(properties.getRootPath()+"/"+properties.getTargetFile());
+            if (!ok){
+                throw new  MojoFailureException("文件上传失败");
+            }
+        }catch (Exception e){
+            ftpClient.close();
+        }finally {
+            ftpClient.close();
         }
 
     }
+
 }
