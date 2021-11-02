@@ -6,7 +6,7 @@
 
 用于maven打包完通过FTP上传文件到指定服务器的插件。
 
-### 安装 
+### 安装指南
 ```xml
 <build>
     <plugins>
@@ -42,3 +42,4 @@
     </plugins>
 </build>
 ```
+
