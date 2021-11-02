@@ -1,7 +1,12 @@
 # maven-ftp-upload-plugin
 
-### example
+### 作者：edison
+### 邮箱：edisonlil@163.com
 
+
+用于maven打包完通过FTP上传文件到指定服务器的插件。
+
+### 安装 
 ```xml
 <build>
     <plugins>
