@@ -98,7 +98,7 @@ public class PluginProperties {
     }
 
     public String getTargetFile() {
-        return targetFile;
+        return targetFile == null ? "":targetFile;
     }
 
     public void setTargetFile(String targetFile) {

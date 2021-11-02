@@ -6,7 +6,7 @@
 
     <groupId>com.github.edisonlil</groupId>
     <artifactId>maven-ftp-upload-plugin</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.3-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
 
     <properties>
@@ -39,7 +39,7 @@
             <artifactId>maven-plugin-api</artifactId>
             <version>3.6.0</version>
         </dependency>
-        <!-- 类扫描器依赖，可以看你习惯自己挑 -->
+        <!-- 类扫描器依赖-->
         <dependency>
             <groupId>io.github.classgraph</groupId>
             <artifactId>classgraph</artifactId>

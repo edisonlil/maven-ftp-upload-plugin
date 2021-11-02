@@ -1,6 +1,7 @@
 package com.github.edisonlil;
 
 import com.github.edisonlil.properties.PluginProperties;
+import com.github.edisonlil.util.FileUtil;
 import com.github.edisonlil.util.FtpClient;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -29,36 +30,49 @@ public class FtpUploadMojo extends AbstractMojo {
     @Parameter(name = "properties")
     PluginProperties properties;
 
+    Log log = getLog();
 
     @Override
     public void execute() throws MojoExecutionException, MojoFailureException {
 
-        Log log = getLog();
 
         log.info("GenerateDocsMojo 读取配置信息：\n"+properties.toString());
 
+
+        FtpClient ftpClient = createFtpClient();
+
         //基础项目目录
         File baseDir = project.getBasedir();
-
-        FtpClient ftpClient = new FtpClient(properties.getFtpHost(),properties.getFtpPort(),
-                properties.getFtpUsername(),properties.getFtpPassword(),properties.getFtpRemoteDir(),log);
 
         if(properties.getRootPath() == null){
             properties.setRootPath(baseDir.getPath());
         }
 
-        log.info("Start upload file...");
+        if(ftpClient.hasDir(properties.getFtpRemoteDir())){
+            ftpClient.delDir(properties.getFtpRemoteDir());
+        }
+
+        log.info("maven-ftp-upload-plugin 开始上传文件");
+
         try {
-            boolean ok = ftpClient.upload(properties.getRootPath()+"/"+properties.getTargetFile());
-            if (!ok){
-                throw new  MojoFailureException("文件上传失败");
-            }
+            String targetFilePath = FileUtil.newFile(properties.getRootPath(),properties.getTargetFile()).getPath();
+            ftpClient.upload(properties.getFtpRemoteDir(),properties.getRootPath(),targetFilePath);
         }catch (Exception e){
             ftpClient.close();
+            throw new  MojoFailureException("文件上传失败: "+e.getMessage());
         }finally {
             ftpClient.close();
         }
 
+        log.info("maven-ftp-upload-plugin 文件上传成功");
     }
+
+
+    public FtpClient createFtpClient(){
+
+       return new FtpClient(properties.getFtpHost(),properties.getFtpPort(),
+                properties.getFtpUsername(),properties.getFtpPassword(),properties.getFtpRemoteDir(),log);
+    }
+
 
 }
