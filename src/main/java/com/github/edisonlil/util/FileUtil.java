@@ -3,7 +3,7 @@ package com.github.edisonlil.util;
 import java.io.File;
 
 /**
- * description
+ * 文件工具类
  *
  * @author edison
  * @since 2021/11/02 09:53

@@ -1,8 +1,10 @@
 package com.github.edisonlil.properties;
 
 /**
- * description
- *
+ * 插件配置 读取<plugin>标签的<configuration>标签
+ * <configuration>
+ *  ...
+ * </configuration>
  * @author edison
  * @since 2021/11/01 15:19
  */

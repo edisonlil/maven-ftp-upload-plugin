@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 /**
- * FTP上传
+ * FTP上传客户端
  *
  * @author edison
  * @since 2021/11/01 17:03
