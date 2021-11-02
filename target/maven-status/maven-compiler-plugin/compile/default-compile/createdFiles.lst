@@ -1,0 +1,4 @@
+com\github\edisonlil\FtpUploadMojo.class
+com\github\edisonlil\util\FtpClient.class
+com\github\edisonlil\properties\PluginProperties.class
+com\github\edisonlil\util\FileUtil.class

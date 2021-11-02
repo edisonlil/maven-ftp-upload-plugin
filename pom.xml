@@ -6,7 +6,7 @@
 
     <groupId>com.github.edisonlil</groupId>
     <artifactId>maven-ftp-upload-plugin</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
 
     <properties>
